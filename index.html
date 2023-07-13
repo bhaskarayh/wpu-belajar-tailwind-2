@@ -202,7 +202,28 @@
     <div class="w-40 h-40 mt-20 bg-pink-300 mx-auto rounded-lg shadow-lg animate-goyang"></div>
 
 
+
+    <hr class="my-20">
+
+
+    <div class="container px-5 mx-auto">
+        <div class="border rounded-lg shadow-lg p-10 relative">
+            <div
+                class="rounded-full border w-10 h-10 bg-sky-200 flex absolute -top-5 left-1/2 -translate-x-1/2 cursor-pointer" id="btn-top">
+                <span class="text-xl m-auto">🔝</span>
+            </div>
+            <img src="./src/img/photo-1420310414923-bf3651a89816.jpeg" alt="laptop" width="150" class="float-left mr-3">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vero dolorum, numquam excepturi
+                consequuntur exercitationem repudiandae rem. Cum, inventore esse. Quia debitis soluta blanditiis eum
+                minus! Amet eum nemo dicta, doloremque architecto veniam tempore incidunt, eveniet magni rerum ea
+                libero.</p>
+        </div>
+    </div>
+
+
+
     <div class="mb-96"></div>
+
 
 
 
@@ -225,8 +246,16 @@
              } */
 
             e.srcElement.checked ? html.classList.add("dark") : html.classList.remove("dark");
-        })
+        });
 
+
+       /*  const btnTop = document.querySelector('#btn-top');
+
+        btnTop.addEventListener('click', (e) =>{
+            document.documentElement.scrollTo({top:0, behavior:'smooth'});
+
+        })
+ */
 
     </script>
 </body>
