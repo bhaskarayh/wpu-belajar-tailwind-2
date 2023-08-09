@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="">
 
 <head>
     <meta charset="UTF-8">
@@ -12,46 +12,48 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&family=Montserrat&display=swap"
         rel="stylesheet">
 
-    <script src="https://cdn.tailwindcss.com"></script>
 
-    <style type="text/tailwindcss">
+
+    <link rel="stylesheet" href="css/build.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+    <!-- <style type="text/tailwindcss">
         /* * {
             border: 1px solid red;
         } */
 
-        #toggle:checked ~ label div.toggle-circle{
-            @apply translate-x-3;
-        }
-    </style>
+      
+    </style> -->
 
     <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    spacing: {
-                        13: '3.25rem',
-                    },
-                    fontFamily: {
-                        inter: ['Inter']
-                    },
-                    colors: {
-                        wpu: '#bada55',
-                        kopi: '#c0ffee'
-                    },
-                    animation: {
-                        'spin-slow': 'spin 3s linear infinite',
-                        'goyang': 'wiggle 1s ease-in-out infinite'
-                    },
-                    keyframes: {
-                        'wiggle': {
-                            '0%, 100%': { transform: 'rotate(-3deg)' },
-                            '50%': { transform: 'rotate(3deg)' },
-                        }
-                    }
-                }
-            }
-        }
+        // tailwind.config = {
+        //     darkMode: 'class',
+        //     theme: {
+        //         extend: {
+        //             spacing: {
+        //                 13: '3.25rem',
+        //             },
+        //             fontFamily: {
+        //                 inter: ['Inter']
+        //             },
+        //             colors: {
+        //                 wpu: '#bada55',
+        //                 kopi: '#c0ffee'
+        //             },
+        //             animation: {
+        //                 'spin-slow': 'spin 3s linear infinite',
+        //                 'goyang': 'wiggle 1s ease-in-out infinite'
+        //             },
+        //             keyframes: {
+        //                 'wiggle': {
+        //                     '0%, 100%': { transform: 'rotate(-3deg)' },
+        //                     '50%': { transform: 'rotate(3deg)' },
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
     </script>
 </head>
 
@@ -93,7 +95,7 @@
 
 
     <div class="max-w-xl h-96 mx-auto mt-[42px] overflow-y-scroll bg-fixed bg-no-repeat bg-center pt-40 px-10"
-        style="background-image: url('./src/img/photo-1420310414923-bf3651a89816.jpeg');">
+        style="background-image: url('./src/img/1.jpeg');">
 
         <div class="p-5 bg-white rounded-t-xl">
 
@@ -212,7 +214,7 @@
                 id="btn-top">
                 <span class="text-xl m-auto">🔝</span>
             </a>
-            <img src="./src/img/photo-1420310414923-bf3651a89816.jpeg" alt="laptop" width="150" class="float-left mr-3">
+            <img src="./src/img/1.jpeg" alt="laptop" width="150" class="float-left mr-3">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae delectus totam mollitia aliquam ipsum
                 iure dolore doloremque ex, incidunt quaerat, id expedita sit! Velit fuga aliquam tempora, fugit
                 necessitatibus deleniti nobis non nesciunt sed et corrupti fugiat magni ab molestias dolorem facere
@@ -236,24 +238,168 @@
     </div> -->
 
     <hr class="my-24 border-t-4">
+    <div class="container px-6 font-inter max-w-md sm:max-w-xl md:max-w-5xl mx-auto lg:flex lg:max-w-full lg:p-0">
+        <div class="lg:p-12 lg:flex-1">
+            <h3 class="text-4xl font-bold text-slate-800 sm:text-5xl">Bhask<span class="text-sky-500">ara</span>
+                Yudhistra Hoetomo</h3>
+            <img src="./src/img/2.jpeg" alt="orang"
+                class="mt-4 rounded-xl shadow-xl sm:mt-6 sm:h-64 sm:w-full sm:object-cover sm:object-center lg:hidden">
+            <h2 class="mt-6 text-2xl font-semibold text-slate-800 sm:mt-8 sm:text-4xl">Mari Belajar programming bersama
+                WPU</h2>
+            <p class="mt-2 text-slate-600 sm:mt-4 sm:text-md">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo facilis, maxime dolore ab consectetur
+                sint quidem illo. Asperiores voluptatum similique reiciendis cumque maiores, hic cum accusamus ipsa
+                vitae
+                qui. At molestiae est, temporibus nesciunt hic, consequuntur corporis inventore et aut amet totam
+                deleniti
+                ipsa doloremque doloribus minima labore quam alias perspiciatis quis. Eum harum tempora exercitationem
+                optio
+                delectus
+            </p>
+            <div class="mt-4">
+                <a href="#"
+                    class="inline-block px-5 py-3 bg-red-600 rounded-lg text-sm text-white shadow-lg uppercase font-semibold tracking-wider sm:text-base">Subscribe
+                    Channel Youtube</a>
+            </div>
+        </div>
 
-    <div class="container px-6 font-inter max-w-md sm:max-w-xl mx-auto">
-        <h3 class="text-4xl font-bold text-slate-800 sm:text-5xl">Bhask<span class="text-sky-500">ara</span> Yudhistra Hoetomo</h3>
-        <img src="./src/img/2.jpeg" alt="orang" class="mt-4 rounded-xl shadow-xl sm:mt-6 sm:h-64 sm:w-full sm:object-cover sm:object-center">
-        <h2 class="mt-6 text-2xl font-semibold text-slate-800 sm:mt-8 sm:text-4xl">Mari Belajar programming bersama WPU</h2>
-        <p class="mt-2 text-slate-600 sm:mt-4 sm:text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo facilis, maxime dolore ab consectetur
-            sint quidem illo. Asperiores voluptatum similique reiciendis cumque maiores, hic cum accusamus ipsa vitae
-            qui. At molestiae est, temporibus nesciunt hic, consequuntur corporis inventore et aut amet totam deleniti
-            ipsa doloremque doloribus minima labore quam alias perspiciatis quis. Eum harum tempora exercitationem optio
-            delectus
-        </p>
-        <div class="mt-4">
-            <a href="#" class="inline-block px-5 py-2 bg-red-600 rounded-lg text-sm text-white shadow-lg uppercase font-semibold tracking-wider sm:text-base">Subscribe Channel Youtube</a>
+        <div class="hidden lg:flex lg:w-1/2 ">
+            <img src="./src/img/2.jpeg" alt="orang" class="object-cover shadow-lg rounded-l-3xl object-center">
         </div>
     </div>
 
+
+    <h2 class="mt-24 mb-10 text-center font-bold text-3xl text-slate-700">My Gallery</h2>
+
+    <div class="container mx-auto px-6 font-inter sm:flex sm:flex-wrap sm:gap-6 sm:justify-evenly">
+        <div class="rounded-md shadow-lg overflow-hidden mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-72 bg-white">
+            <img src="https://source.unsplash.com/600x400" alt="Image Caption"
+                class="w-full object-center object-cover">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2 text-slate-700">Image Title</div>
+                <p class="text-sm text-slate-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, facere?
+                </p>
+            </div>
+        </div>
+        <div class="rounded-md shadow-lg overflow-hidden mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-72  bg-white">
+            <img src="https://source.unsplash.com/600x400" alt="Image Caption"
+                class="w-full object-center object-cover">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2 text-slate-700">Image Title</div>
+                <p class="text-sm text-slate-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, facere?
+                </p>
+            </div>
+        </div>
+        <div class="rounded-md shadow-lg overflow-hidden mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-72  bg-white">
+            <img src="https://source.unsplash.com/600x400" alt="Image Caption"
+                class="w-full object-center object-cover">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2 text-slate-700">Image Title</div>
+                <p class="text-sm text-slate-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, facere?
+                </p>
+            </div>
+        </div>
+        <div class="rounded-md shadow-lg overflow-hidden mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-72  bg-white">
+            <img src="https://source.unsplash.com/600x400" alt="Image Caption"
+                class="w-full object-center object-cover">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2 text-slate-700">Image Title</div>
+                <p class="text-sm text-slate-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, facere?
+                </p>
+            </div>
+        </div>
+        <div class="rounded-md shadow-lg overflow-hidden mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-72  bg-white">
+            <img src="https://source.unsplash.com/600x400" alt="Image Caption"
+                class="w-full object-center object-cover">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2 text-slate-700">Image Title</div>
+                <p class="text-sm text-slate-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, facere?
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <hr class="my-20">
+
+    <div class="mt-64 p-2 font-inter grid grid-cols-2 gap-2 md:grid-cols-4 md:p-4">
+        <h2 class="h-15 text-xl font-semibold text-slate-700 md:col-start-4 md:row-start-2 md:flex"><span
+                class="self-center">Welcome to WPU</span></h2>
+        <div class="h-15 text-lg font-bold text-slate-600 md:col-start-2  md:row-start-2 md:flex"><span
+                class="self-end">@sandhikagalih</span>
+        </div>
+
+        <div
+            class="group grid-card">
+            <div
+                class="grid-card-img bg-[url('/src/img/photo-1480506132288-68f7705954bd.jpeg')]">
+            </div>
+        </div>
+        <div
+            class="group grid-card md:col-start-3 ">
+            <div
+                class="grid-card-img bg-[url('/src/img/photo-1480506132288-68f7705954bd.jpeg')]">
+            </div>
+        </div>
+        <div
+            class="group grid-card">
+            <div
+                class="grid-card-img bg-[url('/src/img/photo-1480506132288-68f7705954bd.jpeg')]">
+            </div>
+        </div>
+        <div
+            class="group grid-card">
+            <div
+                class="grid-card-img bg-[url('/src/img/photo-1480506132288-68f7705954bd.jpeg')]">
+            </div>
+        </div>
+        <div
+            class="group grid-card">
+            <div
+                class="grid-card-img bg-[url('/src/img/photo-1480506132288-68f7705954bd.jpeg')]">
+            </div>
+        </div>
+        <div
+            class="group grid-card md:col-start-2">
+            <div
+                class="grid-card-img bg-[url('/src/img/photo-1480506132288-68f7705954bd.jpeg')]">
+            </div>
+        </div>
+        <div
+            class="group grid-card md:col-start-4">
+            <div
+                class="grid-card-img bg-[url('/src/img/photo-1480506132288-68f7705954bd.jpeg')]">
+            </div>
+        </div>
+        <div
+            class="group grid-card">
+            <div
+                class="grid-card-img bg-[url('/src/img/photo-1480506132288-68f7705954bd.jpeg')]">
+            </div>
+        </div>
+        <div
+            class="group grid-card md:col-start-3">
+            <div
+                class="grid-card-img bg-[url('/src/img/photo-1480506132288-68f7705954bd.jpeg')]">
+            </div>
+        </div>
+        <div
+            class="group grid-card md:col-start-3">
+            <div
+                class="grid-card-img bg-[url('/src/img/photo-1480506132288-68f7705954bd.jpeg')]">
+            </div>
+        </div>
+    </div>
+
+
+    <hr class="my-28">
+
+    <h1 class="text-6xl">WPU</h1>
+
     <div class="mb-96"></div>
+
+
+
+
 
 
 
